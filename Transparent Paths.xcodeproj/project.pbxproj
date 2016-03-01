@@ -14,6 +14,7 @@
 		1C1178B91C85E35700DFDB3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C1178B71C85E35700DFDB3F /* LaunchScreen.storyboard */; };
 		1C1178C41C85E35800DFDB3F /* Transparent_PathsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1178C31C85E35800DFDB3F /* Transparent_PathsTests.swift */; };
 		1C1178CF1C85E35800DFDB3F /* Transparent_PathsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1178CE1C85E35800DFDB3F /* Transparent_PathsUITests.swift */; };
+		1C1178DD1C85E37100DFDB3F /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1178DC1C85E37100DFDB3F /* View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		1C1178CA1C85E35800DFDB3F /* Transparent PathsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Transparent PathsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C1178CE1C85E35800DFDB3F /* Transparent_PathsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transparent_PathsUITests.swift; sourceTree = "<group>"; };
 		1C1178D01C85E35800DFDB3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C1178DC1C85E37100DFDB3F /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				1C1178AE1C85E35700DFDB3F /* AppDelegate.swift */,
 				1C1178B01C85E35700DFDB3F /* ViewController.swift */,
+				1C1178DC1C85E37100DFDB3F /* View.swift */,
 				1C1178B21C85E35700DFDB3F /* Main.storyboard */,
 				1C1178B51C85E35700DFDB3F /* Assets.xcassets */,
 				1C1178B71C85E35700DFDB3F /* LaunchScreen.storyboard */,
@@ -258,6 +261,7 @@
 			files = (
 				1C1178B11C85E35700DFDB3F /* ViewController.swift in Sources */,
 				1C1178AF1C85E35700DFDB3F /* AppDelegate.swift in Sources */,
+				1C1178DD1C85E37100DFDB3F /* View.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
