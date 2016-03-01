@@ -8,9 +8,19 @@
 
 import UIKit
 
-class View: UIView {
+class CustomView: UIView {
 
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        opaque = false
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
     override func drawRect(rect: CGRect) {
+        
         let clippingPath = UIBezierPath()
         
         let context = UIGraphicsGetCurrentContext() // get your current context
@@ -21,7 +31,9 @@ class View: UIView {
         
         CGContextSaveGState(context) // save the current state
         
-        CGContextSetBlendMode(context, .DestinationOut) // change blend mode to DestinationOut
+        CGContextSetBlendMode(context, .DestinationOut) // change blend mode to DestinationOut (R = D * (1-Sa))
+        
+        // do 'transparent' drawing
         
         UIColor.whiteColor().set();
         clippingPath.moveToPoint(CGPoint(x: 10, y: CGRectGetHeight(self.bounds) / 2))
@@ -31,7 +43,6 @@ class View: UIView {
         clippingPath.stroke()
         
         CGContextRestoreGState(context) // restore state of context
-        
         
         // do further drawing if needed
     }
