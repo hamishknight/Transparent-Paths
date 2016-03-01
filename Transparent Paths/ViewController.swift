@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         view.backgroundColor = UIColor.redColor()
         
         let v = View(frame: view.bounds)
-        v.backgroundColor = UIColor.clearColor()
+        v.opaque = false
         view.addSubview(v)
     
     }
